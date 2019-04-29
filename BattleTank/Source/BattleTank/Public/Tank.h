@@ -34,11 +34,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetTurretReference(UTankTurret* TurretToSet);
 
+	UFUNCTION(BlueprintCallable)
+	void Fire();
+
 private:
 	// Sets default values for this pawn's properties
 	ATank();
 
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 4000.f; //TODO Find sensible default
+	float LaunchSpeed = 4000.f; 
 
 };
